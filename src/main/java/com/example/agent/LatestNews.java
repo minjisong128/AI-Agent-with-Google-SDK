@@ -8,9 +8,6 @@ import com.google.adk.web.AdkWebServer;
 
 public class LatestNews {
     public static void main(String[] args) {
-        // .env 파일에서 환경 변수 자동 로드
-        EnvLoader.loadEnvFile();
-        
         AdkWebServer.start(LlmAgent.builder()
             .name("news-search-agent")
             .description("A news search agent")

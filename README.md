@@ -49,6 +49,8 @@ There are two options to run your agent:
 The Dev UI offers a useful chat interface to interact with your agent.
 Run the command below to launch it, and open a browser at `http://localhost:8080/`.
 
+Agent 실행 전 command 창에 $env:GOOGLE_API_KEY=<<YOUR_GOOGLE_API_KEY>> 입력 필요
+
 **Windows (PowerShell):**
 ```powershell
 # Science Teacher 실행
