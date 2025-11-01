@@ -49,9 +49,31 @@ There are two options to run your agent:
 The Dev UI offers a useful chat interface to interact with your agent.
 Run the command below to launch it, and open a browser at `http://localhost:8080/`.
 
+**Windows (PowerShell):**
+```powershell
+# Science Teacher 실행
+mvn compile exec:java "-Dexec.mainClass=com.example.agent.ScienceTeacher"
+
+# Latest News 실행
+mvn compile exec:java "-Dexec.mainClass=com.example.agent.LatestNews"
+
+# Hello Weather Agent 실행
+mvn compile exec:java "-Dexec.mainClass=com.example.agent.HelloWeatherAgent"
+```
+
+**macOS / Linux:**
 ```shell
+# Science Teacher 실행
+mvn compile exec:java -Dexec.mainClass=com.example.agent.ScienceTeacher
+
+# Latest News 실행
+mvn compile exec:java -Dexec.mainClass=com.example.agent.LatestNews
+
+# Hello Weather Agent 실행
 mvn compile exec:java -Dexec.mainClass=com.example.agent.HelloWeatherAgent
 ```
+
+> **팁**: `pom.xml`을 수정할 필요 없이 실행할 때마다 `-Dexec.mainClass`로 원하는 에이전트를 지정할 수 있습니다.
 
 In your browser, you can select the agent in the top left-hand corner and chat with it in the main chat space.
 In the left panel, you can explore the various events, including function calls, LLM requests, and responses,
